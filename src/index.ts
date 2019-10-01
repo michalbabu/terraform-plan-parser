@@ -93,7 +93,7 @@ ACTION_MAPPING['-/+'] = Action.REPLACE;
 ACTION_MAPPING['~'] = Action.UPDATE;
 ACTION_MAPPING['<='] = Action.READ;
 
-const ACTION_LINE_REGEX = /^(?:((?:.*\.)?module\.[^.]*)\.)?(?:(data)\.)?([^.]+)\.([^ ]+)( \(tainted\))?( \(new resource required\))?$/;
+const ACTION_LINE_REGEX = /^(?:((?:.*\.)?module\.[^.]*)\.)?(?:(data)\.)?([^.]+)\.([^ ]+)( \(tainted\))?( \(new resource required\))?( \(deposed\))?$/;
 const ATTRIBUTE_LINE_REGEX = /^ {6}[^ ]/;
 
 // Convert something like "module.test1.module.test2" to "test1.test2"
